@@ -130,7 +130,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1 \
     vendor.audio.dolby.ds2.hardbypass=false \
-    vendor.audio.dolby.ds2.enabled=false
+    vendor.audio.dolby.ds2.enabled=false \
+    ro.audio.monitorRotation=true
 
 # Media
 PRODUCT_PACKAGES += \
