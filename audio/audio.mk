@@ -77,6 +77,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_AUDIO)/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so \
     $(LOCAL_AUDIO)/proprietary/odm/bin/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_ODM)/bin/vendor.dolby.hardware.dms@2.0-service
 
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
 # Dolby Vendor Prop(s)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_1.1.1.24_r1 \
