@@ -15,3 +15,5 @@ allow threesixtyra_app virtual_device_service:service_manager find;
 
 allow threesixtyra_app threesixtyra_vendor_data_file:dir rw_dir_perms;
 allow threesixtyra_app threesixtyra_vendor_data_file:file create_file_perms;
+
+allow threesixtyra_app tmpfs:file { read write map execute };
