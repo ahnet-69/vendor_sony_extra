@@ -1,0 +1,5 @@
+service android-hardware-media-c2-threesixty-ra-hal-1-0 /vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service
+    class hal
+    user mediacodec
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
