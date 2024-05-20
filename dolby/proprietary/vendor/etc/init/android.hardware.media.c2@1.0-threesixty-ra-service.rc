@@ -3,3 +3,21 @@ service android-hardware-media-c2-threesixty-ra-hal-1-0 /vendor/bin/hw/android.h
     user mediacodec
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks
+
+on post-fs-data
+    # Create Directories and Set Permissions
+    mkdir /data/vendor/360ra 0775 audioserver audio
+
+    # Copy Configuration Files and Link ACDB data
+    copy /vendor/etc/360ra /data/vendor/360ra
+    copy /vendor/etc/speaker.hki /data/vendor/360ra/speaker.hki
+    copy /vendor/etc/speaker.hki.config /data/vendor/360ra/speaker.hki.config
+    copy /vendor/etc/alc.speaker.bin /data/vendor/360ra/alc.speaker.bin
+
+    # Set Permissions and Ownership on HKI Files
+    chown audioserver audio /data/vendor/360ra/speaker.hki
+    chown audioserver audio /data/vendor/360ra/speaker.hki.config
+    chown audioserver audio /data/vendor/360ra/alc.speaker.bin
+    chmod 0770 /data/vendor/360ra/speaker.hki
+    chmod 0770 /data/vendor/360ra/speaker.hki.config
+    chmod 0770 /data/vendor/360ra/alc.speaker.bin

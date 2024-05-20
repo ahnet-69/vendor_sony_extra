@@ -23,6 +23,13 @@ PRODUCT_SOONG_NAMESPACES += \
 # Dolby DAP
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
+# Copy 360ra dir
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_DOLBY)/proprietary/vendor/etc/360ra/,$(TARGET_COPY_OUT_VENDOR)/etc/360ra) \
+    $(LOCAL_DOLBY)/proprietary/vendor/etc/HRTF_speaker_coef.hki:$(TARGET_COPY_OUT_VENDOR)/etc/HRTF_speaker_coef.hki \
+    $(LOCAL_DOLBY)/proprietary/vendor/etc/speaker.hki:$(TARGET_COPY_OUT_VENDOR)/etc/speaker.hki \
+    $(LOCAL_DOLBY)/proprietary/vendor/etc/speaker.hki.config:$(TARGET_COPY_OUT_VENDOR)/etc/speaker.hki.config
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_DOLBY)/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     $(LOCAL_DOLBY)/proprietary/system_ext/etc/permissions/com.sony.threesixtyra.audiofx.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sony.threesixtyra.audiofx.xml \
