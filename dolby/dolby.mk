@@ -54,6 +54,29 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_back.data \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_stat.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat.data \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_stat_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat_back.data \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXtcApi.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libaudiokeymgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiokeymgr.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libcodec2_soft_mha1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mha1dec.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libcodec2_soft_mhm1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mhm1dec.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdlbpreg.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/librebuffering.so:$(TARGET_COPY_OUT_VENDOR)/lib/librebuffering.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libthreesixty_ra_codec2_store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreesixty_ra_codec2_store.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libtsrspkenhance.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtsrspkenhance.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libupmix-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libupmix-lib.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libznr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libznr.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libbundlewrapper1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper1.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper2.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libbundlewrapper3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper3.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libbundlewrapper4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper4.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdlbvol.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswgamedap.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswvqe.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libtsrspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtsrspatializer.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libtsrupmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtsrupmix.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libznrwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libznrwrapper.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXtcApi.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libaudiokeymgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiokeymgr.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libaudiosnpewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiosnpewrapper.so \
