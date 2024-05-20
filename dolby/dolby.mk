@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     ThreeSixtyRASettings \
     DolbySound \
     ThreeSixtyRASystem \
+    ThreeSixtyRASystem-Overlay \
     daxService \
     com.sony.threesixtyra.audiofx \
     vendor.dolby.hardware.dms \
