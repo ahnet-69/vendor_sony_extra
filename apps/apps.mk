@@ -18,6 +18,11 @@
 PRODUCT_SOONG_NAMESPACES += \
    vendor/sony/extra/apps
 
+# Perms
+PRODUCT_COPY_FILES += \
+    vendor/sony/extra/apps/configs/permissions/product/privapp-permissions-sony-apps.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-sony-apps.xml \
+    vendor/sony/extra/apps/configs/permissions/system_ext/privapp-permissions-sony-apps.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-sony-apps.xml
+
 # Sony Apps
 PRODUCT_PACKAGES += \
     MusicPro \
