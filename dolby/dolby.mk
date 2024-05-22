@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_DOLBY)/proprietary/system_ext/etc/permissions/com.sony.threesixtyra.audiofx.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sony.threesixtyra.audiofx.xml \
     $(LOCAL_DOLBY)/proprietary/system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonyericsson.soundenhancement.xml \
     $(LOCAL_DOLBY)/proprietary/system_ext/etc/permissions/jp.co.sony.threesixtyra.system.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/jp.co.sony.threesixtyra.system.xml \
+    $(LOCAL_DOLBY)/proprietary/system_ext/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/extractors/libmmparserextractor.so \
+    $(LOCAL_DOLBY)/proprietary/system_ext/lib/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libavenhancements.so \
+    $(LOCAL_DOLBY)/proprietary/system_ext/lib64/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libmmparserextractor.so \
+    $(LOCAL_DOLBY)/proprietary/system_ext/lib64/libavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavenhancements.so \
     $(LOCAL_DOLBY)/proprietary/system_ext/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.dolby.hardware.dms@2.0.so \
     $(LOCAL_DOLBY)/proprietary/vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service \
     $(LOCAL_DOLBY)/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
@@ -61,6 +65,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_back.data \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_stat.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat.data \
     $(LOCAL_DOLBY)/proprietary/vendor/etc/windnoise_reduction_stat_back.data:$(TARGET_COPY_OUT_VENDOR)/etc/windnoise_reduction_stat_back.data \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libar-acdb.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXtcApi.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/libaudiokeymgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiokeymgr.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/libcodec2_soft_mha1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mha1dec.so \
@@ -83,6 +88,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libtsrupmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtsrupmix.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/soundfx/libznrwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libznrwrapper.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
+    $(LOCAL_DOLBY)/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXtcApi.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libaudiokeymgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiokeymgr.so \
     $(LOCAL_DOLBY)/proprietary/vendor/lib64/libaudiosnpewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiosnpewrapper.so \
