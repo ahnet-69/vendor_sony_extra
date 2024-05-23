@@ -154,6 +154,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.360ra.effect=1 \
     ro.audio.spatializer_enabled=true
 
+PRODUCT_ODM_PROPERTIES += \
+    vendor.sony_spatializer.suppress.dolby=true
+
 PRODUCT_PACKAGES += \
     ThreeSixtyRASettings \
     DolbySound \
