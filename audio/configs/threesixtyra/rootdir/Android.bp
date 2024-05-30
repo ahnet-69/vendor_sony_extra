@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2024 XperiaLabs Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.threesixtyra.rc",
+    src: "init.threesixtyra.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.threesixtyra.sh",
+    src: "init.threesixtyra.sh",
+    vendor: true,
+}

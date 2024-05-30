@@ -1,0 +1,14 @@
+#
+# Copyright (C) 2024 XperiaLabs Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service threesixtyra_sh /odm/bin/init.threesixtyra.sh
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:sys.boot_completed=1
+    start threesixtyra_sh

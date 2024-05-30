@@ -18,9 +18,9 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra
 
-# Dolby Sound
+# Dolby & 360RA Sound
 ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
-    $(call inherit-product, vendor/sony/extra/dolby/dolby.mk)
+    $(call inherit-product, vendor/sony/extra/audio/audio.mk)
 endif
 
 # Camera Apps

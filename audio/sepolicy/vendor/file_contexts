@@ -1,0 +1,12 @@
+# 360RA Scripts
+/(odm|vendor/odm)/bin/init\.qcom\.threesixtyra\.sh    u:object_r:init-threesixtyra-sh_exec:s0
+
+# 360 RA Data file
+/data/vendor/360ra(/.*)? u:object_r:threesixtyra_vendor_data_file:s0
+
+# 360 RA HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.0-threesixty-ra-service u:object_r:mediacodec_exec:s0
+
+# Dolby
+/(system/vendor|vendor)/bin/hw/vendor\.dolby\.media\.c2@1\.0-service       u:object_r:mediacodec_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service       u:object_r:hal_dms_default_exec:s0
