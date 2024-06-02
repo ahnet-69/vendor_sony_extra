@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-service threesixtyra_sh /odm/bin/init.threesixtyra.sh
+service threesixtyra_sh /vendor/bin/init.threesixtyra.sh
     user root
     group root
     oneshot
