@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 XperiaLabs Project
+# Copyright (C) 2024 XperiaLabs Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,4 +31,5 @@ PRODUCT_PACKAGES += \
     SomcMediaExtensionProvider \
     ExternalMonitor \
     UsbExtOutAudio \
-    VideoCreator
+    VideoCreator \
+    XperiaLWP

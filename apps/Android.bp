@@ -1,4 +1,4 @@
-// Copyright (C) 2023 XperiaLabs Project
+// Copyright (C) 2024 XperiaLabs Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ android_app_import {
 	owner: "sony",
 	apk: "MusicPro/MusicPro.apk",
 	presigned: true,
-        preprocessed: true,
         overrides: ["Recorder, RecorderPrebuilt"],
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -34,13 +34,13 @@ android_app_import {
 	owner: "sony",
 	apk: "SonyMusic/SonyMusic.apk",
 	presigned: true,
-        preprocessed: true,
-	skip_preprocessed_apk_checks: true,
         overrides: ["Eleven"],
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	system_ext_specific: true,
 }
 
@@ -49,11 +49,11 @@ android_app_import {
 	owner: "sony",
 	apk: "ColorGamut/ColorGamut.apk",
 	presigned: true,
-        preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	system_ext_specific: true,
 }
 
@@ -62,12 +62,12 @@ android_app_import {
 	owner: "sony",
 	apk: "MediaExtensionProvider/MediaExtensionProvider.apk",
 	presigned: true,
-        preprocessed: true,
-	skip_preprocessed_apk_checks: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -76,11 +76,11 @@ android_app_import {
 	owner: "sony",
 	apk: "ExternalMonitor/ExternalMonitor.apk",
 	presigned: true,
-        preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -89,11 +89,11 @@ android_app_import {
 	owner: "sony",
 	apk: "UsbExtOutAudio/UsbExtOutAudio.apk",
 	presigned: true,
-        preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	preprocessed: true,
 	product_specific: true,
 }
 
@@ -102,11 +102,25 @@ android_app_import {
 	owner: "sony",
 	apk: "VideoCreator/VideoCreator.apk",
 	presigned: true,
-        preprocessed: true,
-	skip_preprocessed_apk_checks: true,
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "XperiaLWP",
+	owner: "sony",
+	apk: "XperiaLWP/XperiaLWP.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	skip_preprocessed_apk_checks: true,
+	preprocessed: true,
 	product_specific: true,
 }
