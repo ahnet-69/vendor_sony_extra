@@ -2,15 +2,19 @@
 <!-- for the partition: /product -->
 <permissions>
 
-    <privapp-permissions package="com.sonymobile.photoprox">
+    <privapp-permissions package="com.sonymobile.photopro">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="com.sonymobile.permission.SECURE_DATA_MANAGER"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.sonyericsson.android.camerax">
+    <privapp-permissions package="com.sonyericsson.android.camera">
         <permission name="android.permission.STOP_APP_SWITCHES"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="com.sonymobile.permission.SECURE_DATA_MANAGER"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.sonymobile.addoncamera.portraitselfie">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
 </permissions>
