@@ -70,25 +70,22 @@ android_app_import {
 	name: "SomcPhotoPro-xxhdpi-release",
 	owner: "sony",
 	apk: "proprietary/product/priv-app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk",
-	presigned: true,
+        certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	preprocessed: true,
-	skip_preprocessed_apk_checks: true,
 	product_specific: true,
 }
 
 android_app_import {
-	name: "com.sonymobile.addoncamera.portraitselfiex",
+	name: "com.sonymobile.addoncamera.portraitselfie",
 	owner: "sony",
-	apk: "proprietary/product/priv-app/com.sonymobile.addoncamera.portraitselfiex/com.sonymobile.addoncamera.portraitselfiex.apk",
-	presigned: true,
+	apk: "proprietary/product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk",
+        certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	preprocessed: true,
 	privileged: true,
 	product_specific: true,
 }
@@ -97,12 +94,11 @@ android_app_import {
         name: "SemcCameraUI-xxhdpi-release",
         owner: "sony",
         apk: "proprietary/product/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk",
-        presigned: true,
+        certificate: "platform",
         overrides: ["Aperture", "Camera2", "GoogleCameraGo"],
         dex_preopt: {
                 enabled: false,
         },
-	preprocessed: true,
         privileged: true,
         product_specific: true,
 }
