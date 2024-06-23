@@ -1,0 +1,6 @@
+# Allow rules for vendor_360ra_prop
+allow hal_audio_default vendor_360ra_prop:file { read getattr map open };
+allow hal_audio_default vendor_360ra_prop:property_service set;
+
+# Allow rules for vendor_360ra_restricted_prop
+allow hal_audio_default vendor_360ra_restricted_prop:file { read getattr map open };

@@ -1,0 +1,8 @@
+# 360RA
+type vendor_360ra_prop;
+type vendor_360ra_restricted_prop;
+type vendor_spatializer_prop;
+
+typeattribute vendor_360ra_prop property_type;
+typeattribute vendor_360ra_restricted_prop property_type;
+typeattribute vendor_spatializer_prop property_type;

@@ -1,0 +1,2 @@
+# Allow rules for vendor_360ra_restricted_prop
+allow threesixtyra_app vendor_360ra_restricted_prop:file { read getattr map open };
