@@ -66,6 +66,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc)
+            [ "$2" = "" ] && return 0
+            grep -q "task_profiles" "${2}" || sed -i "s|writepid /dev/cpuset/foreground/tasks|task_profiles ProcessCapacityHigh HighPerformance|g" "${2}"
+            ;;
         vendor/lib/libdlbpreg.so | vendor/lib/soundfx/libdlbvol.so | vendor/lib64/libcodec2_soft_ac4dec.so | vendor/lib64/libcodec2_soft_ddpdec.so | vendor/lib64/libcodec2_soft_dolby.so | vendor/lib64/libdlbpreg.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/soundfx/libdlbvol.so)
             [ "$2" = "" ] && return 0
              grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
