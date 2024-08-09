@@ -31,52 +31,42 @@ android_app_import {
 android_app_import {
 	name: "DaxUI",
 	owner: "sony",
-	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	apk: "proprietary/system_ext/app/DaxUI/DaxUI.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
 	privileged: true,
-	system_ext_specific: true,
 }
 
 android_app_import {
-	name: "ThreeSixtyRASettings",
+	name: "ExtendedAudioService",
 	owner: "sony",
-	apk: "proprietary/system_ext/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk",
+	apk: "proprietary/system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "ThreeSixtyRASystem",
-	owner: "sony",
-	apk: "proprietary/system_ext/priv-app/ThreeSixtyRASystem/ThreeSixtyRASystem.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	privileged: true,
-	system_ext_specific: true,
 }
 
 android_app_import {
-        name: "ThreeSixtyRASystem-Overlay",
-        owner: "sony",
-        apk: "proprietary/product/overlay/ThreeSixtyRASystem-Overlay.apk",
-        certificate: "platform",
-        dex_preopt: {
-                enabled: false,
-        },
-        product_specific: true,
+	name: "SoundEnhancement",
+	owner: "sony",
+	apk: "proprietary/system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+	privileged: true,
 }
 
 dex_import {
-	name: "com.sony.threesixtyra.audiofx",
+	name: "dolby_dax",
 	owner: "sony",
-	jars: ["proprietary/system_ext/framework/com.sony.threesixtyra.audiofx.jar"],
+	jars: ["proprietary/system_ext/framework/dolby_dax.jar"],
 	system_ext_specific: true,
 }
