@@ -89,5 +89,4 @@ PRODUCT_PACKAGES += \
     daxService \
     DaxUI \
     ExtendedAudioService \
-    SoundEnhancement \
     dolby_dax

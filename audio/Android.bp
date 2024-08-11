@@ -52,18 +52,6 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "SoundEnhancement",
-	owner: "sony",
-	apk: "proprietary/system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-	privileged: true,
-}
-
 dex_import {
 	name: "dolby_dax",
 	owner: "sony",
