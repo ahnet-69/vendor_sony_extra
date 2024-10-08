@@ -28,6 +28,11 @@ ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
     $(call inherit-product, vendor/sony/extra/camera/camera.mk)
 endif
 
+# Media Vibration
+ifeq ($(TARGET_SHIPS_MEDIA_VIB),true)
+    $(call inherit-product, vendor/sony/extra/mediavib/mediavib.mk)
+endif
+
 # Sony Apps
 ifeq ($(TARGET_SHIPS_SONY_APPS),true)
     $(call inherit-product, vendor/sony/extra/apps/apps.mk)

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2016 Sony Corporation
+ -->
+<!--
+    An example of pre-grant list is following:
+
+      <exceptions>
+         <exception package="com.example.a">
+            <permission name="android.permission.BODY_SENSORS" fixed="false"/>
+         </exception>
+         <exception package="com.example.b">
+            <permission name="android.permission.BODY_SENSORS" fixed="true"/>
+            <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+            <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+         </exception>
+      </exceptions>
+
+
+    The xml format of pre-grant list is following:
+
+     - <exceptions>
+        - It represents list of <exception>
+        - It contains some <exception>
+
+     - <exception package="***">
+        - It represents a setting about one package that wanted to apply pre-grant processing
+        - It contains some <permission>
+
+        - [package] attribute represents the package name
+           Value : [string]
+
+     - <permission name="***" fixed="***">
+        - It represents a setting about one permission that is pre-granted for the package of
+          <exception>
+
+        - [name] attribute represents the permission name
+           Value : [string]
+
+        - [fixed] attribute represents a flag for systemFixed setting of the permission
+           Value : [true, false]
+
+           true set the permission systemFixed, false does not set the permission systemFixed.
+           In case of systemfixed is not defined does not set the permission systemFixed.
+
+
+    The pre-grant processing behavior in the above example is described following:
+
+     - Package com.example.a
+        - The following permission is pre-granted:
+           - android.permission.BODY_SENSORS   (Not set as systemFixed)
+
+          User can change the granting state of com.example.a's BODY_SENSORS permission in UI.
+          In this case, The following permission group can be changed in UI:
+           - Body Sensors
+
+     - Package com.example.b
+        - The following permission are pre-granted:
+           - android.permission.BODY_SENSORS   (Set as systemFixed)
+           - android.permission.READ_CALENDAR  (Not set as systemFixed)
+           - android.permission.WRITE_CALENDAR (Not set as systemFixed)
+
+          User can not change the granting state of com.example.b's BODY_SENSORS permission in UI.
+          And, User can change the granting state of com.example.b's READ_CALENDAR permission and
+          WRITE_CALENDAR permission in UI.
+          In this case, the following permission group can be changed in UI:
+           - Calendar
+ -->
+
+<exceptions>
+
+  <!-- Common -->
+  <exception package="com.sonymobile.providers.media">
+    <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+  </exception>
+
+</exceptions>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+    Copyright 2021 Sony Corporation
+ -->
+<permissions>
+    <library name="com.sonymobile.xperia.enterprise"
+             file="/system_ext/framework/com.sonymobile.xperia.enterprise_impl.jar"/>
+</permissions>
