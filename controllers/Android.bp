@@ -20,6 +20,7 @@ android_app_import {
 	owner: "sony",
 	apk: "DualshockManager/DualshockManager.apk",
 	presigned: true,
+        preprocessed: true,
 	dex_preopt: {
 		enabled: false,
 	},
