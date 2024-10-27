@@ -1,4 +1,4 @@
-// Copyright (C) 2023 XperiaLabs Project
+// Copyright (C) 2024 XperiaLabs Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,6 +13,8 @@
 // limitations under the License.
 
 soong_namespace {
+	imports: [
+	],
 }
 
 android_app_import {
@@ -20,41 +22,22 @@ android_app_import {
 	owner: "sony",
 	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "DolbySound",
+	owner: "sony",
+	apk: "proprietary/system_ext/priv-app/DolbySound/DolbySound.apk",
 	overrides: ["AudioFX"],
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "DaxUI",
-	owner: "sony",
-	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
 	privileged: true,
-}
-
-android_app_import {
-	name: "ExtendedAudioService",
-	owner: "sony",
-	apk: "proprietary/system_ext/priv-app/ExtendedAudioService/ExtendedAudioService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-	privileged: true,
-}
-
-dex_import {
-	name: "dolby_dax",
-	owner: "sony",
-	jars: ["proprietary/system_ext/framework/dolby_dax.jar"],
 	system_ext_specific: true,
 }
