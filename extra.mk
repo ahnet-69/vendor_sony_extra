@@ -28,6 +28,11 @@ ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
     $(call inherit-product, vendor/sony/extra/camera/camera.mk)
 endif
 
+# SideSense
+ifeq ($(TARGET_SHIPS_SIDESENSE),true)
+    $(call inherit-product, vendor/sony/extra/sidesense/sidesense.mk)
+endif
+
 # Sony Apps
 ifeq ($(TARGET_SHIPS_SONY_APPS),true)
     $(call inherit-product, vendor/sony/extra/apps/apps.mk)
