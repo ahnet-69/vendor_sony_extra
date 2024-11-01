@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.sonymobile.superstamina.api"
+        file="/system_ext/framework/com.sonymobile.superstamina_impl.jar"/>
+    <library name="com.sonymobile.superstamina.api_2"
+        file="/system_ext/framework/com.sonymobile.superstamina_impl.jar"/>
+    <library name="com.sonymobile.superstamina.api_3"
+        file="/system_ext/framework/com.sonymobile.superstamina_impl.jar"/>
+</permissions>

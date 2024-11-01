@@ -17,6 +17,7 @@ $(call inherit-product, vendor/sony/extra/extra.mk)
 |`TARGET_SHIPS_SONY_CAMERA`|`Ships Sony's Camera Apps`|
 |`TARGET_SHIPS_SIDESENSE`|`Ships Sony SideSense implementation from 1VI`|
 |`TARGET_SHIPS_SONY_APPS`|`Ships misc Sony Apps e.g. Music pro etc.`|
+|`TARGET_SHIPS_STAMINA`|`Ships Sony's advanced battery saver implementation`|
 |`TARGET_SUPPORTS_GAME_CONTROLLERS`|`Ships Sony's Game controller app and needed layouts for various controllers.`|
 
 
