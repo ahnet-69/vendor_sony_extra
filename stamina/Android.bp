@@ -41,41 +41,8 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-android_app_import {
-	name: "FrameworksRes-Stamina-Overlay",
-	owner: "sony",
-	apk: "proprietary/product/overlay/FrameworksRes-Stamina-Overlay/FrameworksRes-Stamina-Overlay.apk",
-	certificate: "platform",
-        dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "SettingsRes-Stamina-Overlay",
-	owner: "sony",
-	apk: "proprietary/product/overlay/SettingsRes-Stamina-Overlay/SettingsRes-Stamina-Overlay.apk",
-	certificate: "platform",
-        dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "SystemUIRes-Stamina-Overlay",
-	owner: "sony",
-	apk: "proprietary/product/overlay/SystemUIRes-Stamina-Overlay/SystemUIRes-Stamina-Overlay.apk",
-	certificate: "platform",
-        dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
 dex_import {
-	name: "com.sonymobile.superstamina_impl.jar",
+	name: "com.sonymobile.superstamina_impl",
 	owner: "sony",
 	jars: ["proprietary/system_ext/framework/com.sonymobile.superstamina_impl.jar"],
 	system_ext_specific: true,
