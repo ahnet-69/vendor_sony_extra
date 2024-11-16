@@ -47,3 +47,8 @@ endif
 ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
     $(call inherit-product, vendor/sony/extra/controllers/gc.mk)
 endif
+
+# Game Enhancer
+ifeq ($(TARGET_SHIPS_GE),true)
+    $(call inherit-product, vendor/sony/extra/gameench/enhancer.mk)
+endif
