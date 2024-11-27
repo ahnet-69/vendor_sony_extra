@@ -1,0 +1,4 @@
+# 360RA
+vendor.360ra.                                   u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.                           u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.debug.tuning.parameter     u:object_r:vendor_360ra_restricted_prop:s0

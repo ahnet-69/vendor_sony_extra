@@ -1,3 +1,6 @@
+# 360 RA Data file
+/data/vendor/360ra(/.*)? u:object_r:threesixtyra_vendor_data_file:s0
+
 # Dolby Files
 /data/vendor/dolby(/.*)? u:object_r:vendor_data_file:s0
 
