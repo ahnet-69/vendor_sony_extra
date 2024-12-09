@@ -23,6 +23,10 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+        required: [
+            "SideSenseMonitorApp",
+            "privapp-permissions-com.sonymobile.sidesenseapp",
+        ],
 	privileged: true,
 	system_ext_specific: true,
 }
@@ -35,6 +39,25 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+        required: [
+            "privapp-permissions-com.sonymobile.sidesenseapp.monitor",
+        ],
 	privileged: true,
 	system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-com.sonymobile.sidesenseapp",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "proprietary/system_ext/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-com.sonymobile.sidesenseapp.monitor",
+    system_ext_specific: true,
+    sub_dir: "permissions",
+    src: "proprietary/system_ext/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.monitor.xml",
+    filename_from_src: true,
 }

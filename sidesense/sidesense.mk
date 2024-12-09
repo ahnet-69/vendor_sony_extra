@@ -20,11 +20,6 @@ PRODUCT_SOONG_NAMESPACES += vendor/sony/extra/sidesense
 # Local Path
 LOCAL_SS := vendor/sony/extra/sidesense
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_SS)/proprietary/system_ext/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.monitor.xml:$(TRAGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.monitor.xml \
-    $(LOCAL_SS)/proprietary/system_ext/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.xml:$(TRAGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.sonymobile.sidesenseapp.xml
-
 # Packages
 PRODUCT_PACKAGES += \
     SideSenseApp \
