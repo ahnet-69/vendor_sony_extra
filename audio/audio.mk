@@ -110,8 +110,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.c2.preferred=true \
     debug.c2.use_dmabufheaps=1 \
     vendor.qc2audio.suspend.enabled=true \
-    vendor.qc2audio.per_frame.flac.dec.enabled=true \
-    debug.stagefright.c2inputsurface=-1
+    vendor.qc2audio.per_frame.flac.dec.enabled=true
 
 # Dolby Props
 PRODUCT_VENDOR_PROPERTIES += \
