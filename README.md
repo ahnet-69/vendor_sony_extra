@@ -19,7 +19,6 @@ $(call inherit-product, vendor/sony/extra/extra.mk)
 |`TARGET_SHIPS_SONY_APPS`|`Ships misc Sony Apps e.g. Music pro etc.`|
 |`TARGET_SHIPS_STAMINA`|`Ships Sony's advanced battery saver implementation`|
 |`TARGET_SUPPORTS_GAME_CONTROLLERS`|`Ships Sony's Game controller app and needed layouts for various controllers.`|
-|`TARGET_SHIPS_GE`|`Ships Sony's Game Enhancer for legacy edo platform`|
 
 ### Notes
 - Game Controllers might need this commit if dummy framework is being used from **[here](https://github.com/ahnet-69/hardware_sony/commit/1bb771e0a412433777d1a0e48e7b39663714f505)**
