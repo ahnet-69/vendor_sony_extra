@@ -36,11 +36,6 @@ DEVICE_MANIFEST_FILE += \
 # Dolby DAP
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
-# 64 Audio Service
-SOONG_CONFIG_NAMESPACES += android_hardware_audio
-SOONG_CONFIG_android_hardware_audio += run_64bit
-SOONG_CONFIG_android_hardware_audio_run_64bit := true
-
 # Blobs
 PRODUCT_COPY_FILES += \
     $(LOCAL_AUDIO)/proprietary/system_ext/etc/default-permissions/default-permissions-360ra.apps.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-360ra.apps.xml \
@@ -52,6 +47,23 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_AUDIO)/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     $(LOCAL_AUDIO)/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     $(LOCAL_AUDIO)/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libXtcApi.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdlbpreg.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libiVptApi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiVptApi.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libiVptHkiDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiVptHkiDec.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libiVptLibC.so:$(TARGET_COPY_OUT_VENDOR)/lib/libiVptLibC.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/libupmix-lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libupmix-lib.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libbundlewrapper1.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper1.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libbundlewrapper2.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper2.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libbundlewrapper3.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper3.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libbundlewrapper4.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper4.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdlbvol.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswgamedap.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswvqe.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/soundfx/libtsrupmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtsrupmix.so \
+    $(LOCAL_AUDIO)/proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
     $(LOCAL_AUDIO)/proprietary/vendor/lib64/libXtcApi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXtcApi.so \
     $(LOCAL_AUDIO)/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     $(LOCAL_AUDIO)/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
