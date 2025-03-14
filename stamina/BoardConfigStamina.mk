@@ -13,17 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_STAMINA := vendor/sony/extra/stamina
+STAMINA_PATH := vendor/sony/extra/stamina
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_STAMINA)/configs/permissions/system_ext/etc/com.sonymobile.staminalevel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.staminalevel.xml
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(STAMINA_PATH)/sepolicy/vendor
 
-# Packages
-PRODUCT_PACKAGES += \
-	FrameworksRes-StaminaMode-Overlay \
-	SettingsRes-StaminaMode-Overlay \
-	SystemUIRes-StaminaMode-Overlay
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(STAMINA_PATH)/configs/vintf/superstamina_framework_matrix.xml
 
-# Include extra vendor stamina stuff
-$(call inherit-product, vendor/sony/extra/stamina/stamina-vendor.mk)
+DEVICE_MANIFEST_FILE += \
+    $(STAMINA_PATH)/configs/vintf/vendor.somc.hardware.superstamina.xml
+
+# inherit from the proprietary version
+-include vendor/sony/extra/stamina/BoardConfigVendor.mk

@@ -13,17 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_STAMINA := vendor/sony/extra/stamina
+EXTRA_PATH := vendor/sony/extra
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_STAMINA)/configs/permissions/system_ext/etc/com.sonymobile.staminalevel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.staminalevel.xml
+# Audio Enhancements
+ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
+-include $(EXTRA_PATH)/audio/BoardConfigAudio.mk
+endif
 
-# Packages
-PRODUCT_PACKAGES += \
-	FrameworksRes-StaminaMode-Overlay \
-	SettingsRes-StaminaMode-Overlay \
-	SystemUIRes-StaminaMode-Overlay
-
-# Include extra vendor stamina stuff
-$(call inherit-product, vendor/sony/extra/stamina/stamina-vendor.mk)
+# Stamina
+ifeq ($(TARGET_SHIPS_STAMINA),true)
+-include $(EXTRA_PATH)/stamina/BoardConfigStamina.mk
+endif

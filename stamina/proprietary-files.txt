@@ -1,0 +1,14 @@
+# From: pdx223 - qssi-user-13-64.1.A.0.851-1-release-keys
+
+# Permissions
+system_ext/etc/permissions/com.sonymobile.superstamina.xml
+
+# Stamina Apps
+system_ext/priv-app/StaminaLevel/StaminaLevel.apk
+system_ext/priv-app/SuperStamina/SuperStamina.apk
+system_ext/framework/com.sonymobile.superstamina_impl.jar
+
+# Stamina blobs
+vendor/bin/hw/vendor.somc.hardware.superstamina@1.0-service
+vendor/etc/init/vendor.somc.hardware.superstamina@1.0-service.rc
+vendor/lib64/vendor.somc.hardware.superstamina@1.0.so

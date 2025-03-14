@@ -4,9 +4,13 @@
 - Dolby & Sony apps and blobs are owned by Dolby™ and Sony™.
 
 ## How to Include?
-- Inherit the extras repo from your device.mk as shown
+- Inherit the extra.mk repo from your device as shown
 ```
 $(call inherit-product, vendor/sony/extra/extra.mk)
+```
+- Inherit the BoardConfigExtra.mk from your BoardConfig as shown
+```
+include vendor/sony/extra/BoardConfigExtra.mk
 ```
 
 - Set Flags Accordingly in order to ship different modules

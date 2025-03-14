@@ -14,36 +14,34 @@
 # limitations under the License.
 #
 
-# Soong Namespace
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra
+LOCAL_PATH := vendor/sony/extra
 
 # Audio Enhancements
 ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
-    $(call inherit-product, vendor/sony/extra/audio/audio.mk)
+    $(call inherit-product, $(LOCAL_PATH)/audio/audio.mk)
 endif
 
 # Camera Apps
 ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
-    $(call inherit-product, vendor/sony/extra/camera/camera.mk)
+    $(call inherit-product, $(LOCAL_PATH)/camera/camera.mk)
 endif
 
 # SideSense
 ifeq ($(TARGET_SHIPS_SIDESENSE),true)
-    $(call inherit-product, vendor/sony/extra/sidesense/sidesense.mk)
+    $(call inherit-product, $(LOCAL_PATH)/sidesense/sidesense.mk)
 endif
 
 # Sony Apps
 ifeq ($(TARGET_SHIPS_SONY_APPS),true)
-    $(call inherit-product, vendor/sony/extra/apps/apps.mk)
+    $(call inherit-product, $(LOCAL_PATH)/apps/apps.mk)
 endif
 
 # Stamina
 ifeq ($(TARGET_SHIPS_STAMINA),true)
-    $(call inherit-product, vendor/sony/extra/stamina/stamina.mk)
+    $(call inherit-product, $(LOCAL_PATH)/stamina/stamina.mk)
 endif
 
 # Game Controllers
 ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
-    $(call inherit-product, vendor/sony/extra/controllers/gc.mk)
+    $(call inherit-product, $(LOCAL_PATH)/controllers/gc.mk)
 endif

@@ -13,17 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-LOCAL_STAMINA := vendor/sony/extra/stamina
+AUDIO_PATH := vendor/sony/extra/audio
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_STAMINA)/configs/permissions/system_ext/etc/com.sonymobile.staminalevel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.sonymobile.staminalevel.xml
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(AUDIO_PATH)/sepolicy/vendor
 
-# Packages
-PRODUCT_PACKAGES += \
-	FrameworksRes-StaminaMode-Overlay \
-	SettingsRes-StaminaMode-Overlay \
-	SystemUIRes-StaminaMode-Overlay
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(AUDIO_PATH)/configs/vintf/dolby_framework_matrix.xml
 
-# Include extra vendor stamina stuff
-$(call inherit-product, vendor/sony/extra/stamina/stamina-vendor.mk)
+DEVICE_MANIFEST_FILE += \
+    $(AUDIO_PATH)/configs/vintf/vendor.dolby.media.c2.xml \
+    $(AUDIO_PATH)/configs/vintf/vendor.dolby.hardware.dms.xml
+
+# Audio HAL Flags
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
+# inherit from the proprietary version
+-include vendor/sony/extra/audio/BoardConfigVendor.mk
