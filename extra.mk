@@ -36,11 +36,6 @@ ifeq ($(TARGET_SHIPS_SONY_APPS),true)
     $(call inherit-product, $(LOCAL_PATH)/apps/apps.mk)
 endif
 
-# Stamina
-ifeq ($(TARGET_SHIPS_STAMINA),true)
-    $(call inherit-product, $(LOCAL_PATH)/stamina/stamina.mk)
-endif
-
 # Game Controllers
 ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
     $(call inherit-product, $(LOCAL_PATH)/controllers/gc.mk)

@@ -19,8 +19,3 @@ EXTRA_PATH := vendor/sony/extra
 ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
 -include $(EXTRA_PATH)/audio/BoardConfigAudio.mk
 endif
-
-# Stamina
-ifeq ($(TARGET_SHIPS_STAMINA),true)
--include $(EXTRA_PATH)/stamina/BoardConfigStamina.mk
-endif
