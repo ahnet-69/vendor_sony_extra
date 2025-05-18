@@ -14,15 +14,6 @@
 # limitations under the License.
 #
 
-# Media (C2)
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor \
-    android.hardware.media.c2@1.2.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
-
 # Codec2 Props
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.c2.preferred=true \
