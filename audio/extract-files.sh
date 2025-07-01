@@ -16,6 +16,12 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../../.."
 
+export TARGET_ENABLE_CHECKELF=true
+
+# If XML files don't have comments before the XML header, use this flag
+# Can still be used with broken XML files by using blob_fixup
+export TARGET_DISABLE_XML_FIXING=true
+
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
@@ -62,7 +68,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib/libdlbpreg.so | vendor/lib/soundfx/libdlbvol.so | vendor/lib64/libcodec2_soft_ac4dec.so | vendor/lib64/libcodec2_soft_ddpdec.so | vendor/lib64/libcodec2_soft_dolby.so | vendor/lib64/libdlbpreg.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/soundfx/libdlbvol.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+             grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         *)
             return 1
