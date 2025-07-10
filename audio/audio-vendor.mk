@@ -14,10 +14,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libdapparamstorage \
     libdlbpreg \
-    libbundlewrapper1 \
-    libbundlewrapper2 \
-    libbundlewrapper3 \
-    libbundlewrapper4 \
     libdlbvol \
     libswdap \
     libswgamedap \
