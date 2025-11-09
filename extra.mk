@@ -21,6 +21,10 @@ ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
     $(call inherit-product, $(LOCAL_PATH)/audio/audio.mk)
 endif
 
+ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT_LEGACY),true)
+    $(call inherit-product, $(LOCAL_PATH)/audio-legacy/audio-legacy.mk)
+endif
+
 # Camera Apps
 ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
     $(call inherit-product, $(LOCAL_PATH)/camera/camera.mk)

@@ -17,7 +17,8 @@ include vendor/sony/extra/BoardConfigExtra.mk
 
 |Flag|Description|
 |:-:|:-:|
-|`TARGET_SHIPS_SOUND_ENHANCEMENT`|`Ships libs for Dolby Atmos.`|
+|`TARGET_SHIPS_SOUND_ENHANCEMENT`|`Ships libs for Dolby Atmos based on Xperia 1 III`|
+|`TARGET_SHIPS_SOUND_ENHANCEMENT_LEGACY`|`Ships libs for Dolby Atmos based on Xperia 1 II.`|
 |`TARGET_SHIPS_SONY_CAMERA`|`Ships Sony's Camera Apps`|
 |`TARGET_SHIPS_SIDESENSE`|`Ships Sony SideSense implementation from 1VI`|
 |`TARGET_SHIPS_SONY_APPS`|`Ships misc Sony Apps e.g. Music pro etc.`|

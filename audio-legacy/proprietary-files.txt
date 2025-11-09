@@ -1,0 +1,25 @@
+# From pdx206 - pdx206:11/RKQ1.211001.001/1:user/release-keys
+
+# System
+system_ext/framework/dolby_dax.jar
+system_ext/app/daxService/daxService.apk:system_ext/priv-app/daxService/daxService.apk
+system_ext/priv-app/DaxUI/DaxUI.apk|8f8ad4141a2790cb26022e5dad4d430eb7e8725d
+
+# Vendor
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
+vendor/lib/libdapparamstorage.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libstagefrightdolby.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so
+
+# SoundFX Libs
+vendor/lib/soundfx/libswdap.so
+vendor/lib64/soundfx/libswdap.so  

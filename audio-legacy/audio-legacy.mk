@@ -13,13 +13,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-EXTRA_PATH := vendor/sony/extra
 
-# Audio Enhancements
-ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
--include $(EXTRA_PATH)/audio/BoardConfigAudio.mk
-endif
+# Dolby Props
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.dolby.dax.version=DAX3_1.1.1.24_r1 \
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
 
-ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT_LEGACY),true)
--include $(EXTRA_PATH)/audio-legacy/BoardConfigAudio.mk
-endif
+# Sony Props
+PRODUCT_ODM_PROPERTIES += \
+    ro.odm.build.SomcCntrl.manufacture=Sony \
+    ro.odm.build.SomcCntrl.Brand=Sony \
+    ro.odm.build.SomcCntrl.Model=Pdx206 \
+    ro.odm.build.SomcCntrl.device=pdx206
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sony.effect.dolby_atmos=true
+
+# Include extra vendor audio stuff
+$(call inherit-product, vendor/sony/extra/audio-legacy/audio-legacy-vendor.mk)

@@ -13,13 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-EXTRA_PATH := vendor/sony/extra
+AUDIO_PATH := vendor/sony/extra/audio-legacy
 
-# Audio Enhancements
-ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
--include $(EXTRA_PATH)/audio/BoardConfigAudio.mk
-endif
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(AUDIO_PATH)/sepolicy/vendor
 
-ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT_LEGACY),true)
--include $(EXTRA_PATH)/audio-legacy/BoardConfigAudio.mk
-endif
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(AUDIO_PATH)/configs/vintf/dolby_framework_matrix.xml
+
+DEVICE_MANIFEST_FILE += \
+    $(AUDIO_PATH)/configs/vintf/vendor.dolby.hardware.dms.xml
+
+# Audio HAL Flags
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+
+# inherit from the proprietary version
+-include vendor/sony/extra/audio-legacy/BoardConfigVendor.mk
