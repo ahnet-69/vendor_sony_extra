@@ -22,21 +22,21 @@ vendor/lib64/liboem_specific.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
-# Dolby Codec2
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/lib64/libcodec2_soft_ddpdec.so
-vendor/lib64/libcodec2_soft_dolby.so
-vendor/lib64/libcodec2_store_dolby.so
-vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libdeccfg.so
+# Dolby Codec2 - pdx223 qssi-user-13-64.1.A.0.851-1-release-keys
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|e85d9ddc34fb3fe6fa4fcd6bb69a06d2049f556c
+vendor/lib64/libcodec2_soft_ddpdec.so|f032aa4de7ce321c4b7bc21e5ff6f81cdee3f694
+vendor/lib64/libcodec2_soft_dolby.so|1eefda643bc7c2f0c3ae77c236a28d55d588d6a5
+vendor/lib64/libcodec2_store_dolby.so|7e607247f03bac053975b381180529d882620c11
+vendor/lib64/libcodec2_soft_ac4dec.so|de1520871913438d4fa1b80fbd2893a3b8e622f5
+vendor/lib64/libdeccfg.so|1a3392c530cb36c728a1cc1d18619c7444cde248
 
 # Dolby SoundFX
-vendor/lib/soundfx/libswdap.so|16e3fe43aa1b118b833692f9408a5788d90318d3
+vendor/lib/soundfx/libswdap.so|0dded004fcf5295786d5ea7a274446d4f6634722
 vendor/lib/soundfx/libswvqe.so
 vendor/lib/soundfx/libdlbvol.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
-vendor/lib64/soundfx/libswdap.so|577e4561e3fca1aea8fd151e5fd965c328b5a261
+vendor/lib64/soundfx/libswdap.so|a89b289b50a1cf531622bc8a8bb12ef54ad3e53f
 vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libswgamedap.so
