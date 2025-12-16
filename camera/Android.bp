@@ -71,6 +71,7 @@ android_app_import {
 	owner: "sony",
 	apk: "proprietary/product/priv-app/SomcPhotoPro-xxhdpi-release/SomcPhotoPro-xxhdpi-release.apk",
         presigned: true,
+        overrides: ["Aperture", "Camera2", "GoogleCameraGo"],
 	dex_preopt: {
 		enabled: false,
 	},
@@ -89,20 +90,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-android_app_import {
-        name: "SemcCameraUI-xxhdpi-release",
-        owner: "sony",
-        apk: "proprietary/product/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk",
-        presigned: true,
-        overrides: ["Aperture", "Camera2", "GoogleCameraGo"],
-        dex_preopt: {
-                enabled: false,
-        },
-        preprocessed: true,
-        privileged: true,
-        product_specific: true,
 }
 
 android_app_import {
