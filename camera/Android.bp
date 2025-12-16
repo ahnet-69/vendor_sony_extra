@@ -84,7 +84,8 @@ android_app_import {
 	name: "com.sonymobile.addoncamera.portraitselfie",
 	owner: "sony",
 	apk: "proprietary/product/priv-app/com.sonymobile.addoncamera.portraitselfie/com.sonymobile.addoncamera.portraitselfie.apk",
-        certificate: "platform",
+	preprocessed: true,
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
