@@ -8,6 +8,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     CameraAddonPermission \
     CameraCommonPermission \
+    SomcCinemaPro-xxhdpi-release \
     CameraCommon \
     CameraPanorama-release \
+    SomcPhotoPro-xxhdpi-release \
+    SemcCameraUI-xxhdpi-release \
+    SomcVideoPro-xxhdpi-release \
     com.sonymobile.addoncamera.portraitselfie
