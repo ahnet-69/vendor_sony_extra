@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra/camera
 
 PRODUCT_PACKAGES += \
+    ArtFilterCamera-xxhdpi-release \
     CameraAddonPermission \
     CameraCommonPermission \
     SomcCinemaPro-xxhdpi-release \
