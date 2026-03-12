@@ -27,5 +27,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.dolby.ds2.enabled=false
 
+# Workaround for Crashes on QPR2+
+$(call soong_config_set,codec2,target_ships_dolby,true)
+
 # Include extra vendor audio stuff
 $(call inherit-product, vendor/sony/extra/audio/audio-vendor.mk)
